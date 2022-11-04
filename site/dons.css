@@ -1,0 +1,194 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+ 
+/* NAV */
+body{
+    background-image: url(/img/charity.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: double;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 0;
+    box-shadow: 0px 5px 0px #1b141400;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Noto Serif', serif;  
+       
+}
+
+
+nav ul li {
+    display: inline-block;    
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;   
+}
+  
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+  
+nav ul li a:hover {
+    color: #555;
+}
+  
+ 
+  /* fill */
+  
+nav.fill ul li a {
+    position: relative;
+}
+  
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(0, 0, 0);
+    height: 1px;
+}
+ 
+nav.fill ul li a {
+    transition: all 2s;
+}
+  
+  
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+  
+nav.fill ul li a:hover {
+    color: #410808;
+    z-index: 1;
+}
+  
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+    border-radius: 15px;
+}
+  
+
+  /* Keyframes */
+
+@keyframes fill {
+  
+  0% {
+  width: 0%;
+  height: 1px;
+  }
+
+  50% {
+  width: 100%;
+  height: 1px;
+  }
+
+  100%{
+  width: 100%;
+  height: 100%;
+  background: #ec4c53;
+ }
+}
+/* FIN NAV */
+
+
+
+/* MAIN */
+
+
+main{
+    height: 900px;
+    width: 100%;
+     
+}
+.dons{
+    background-color:#ffffff5f ;
+    height: 300px;
+}
+ h5{
+    font-size: 5px;
+    color: black;  
+ }
+.mesCoordonnees{
+    background-color: #ec4c5482;   
+    height: 800px;
+}
+
+.monReglement{
+    background-color: #001a2e89;
+    height: 500px;   
+}
+
+.dons ,.mesCoordonnees ,.monReglement{
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.269);
+    margin: 40px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+} 
+
+.jeDonne{
+    color: white;
+    
+}
+
+.btn{
+    color: #ffffff;
+}
+
+/* FIN MAIN */
+
+/* footer */
+footer{
+    /* background-color: #001a2ee7; */
+    background: linear-gradient(#01528cd2,#ec4c53);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  p:hover{
+    color: #001a2e;
+  }
+  i:hover{
+    color: #ec4c53;
+  }
+  
+  /* footer */
