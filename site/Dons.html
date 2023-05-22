@@ -51,34 +51,115 @@
 
 <main>
   <div class="container d-flex justify-content-center">
+    <!-- Don -->
+    <div class=" EnsembleCard">
     <div class="dons">
-        <h4>Mon don</h4>
+        <h4>
+          <b>Mon don</b>
+        </h4>
         <div class="jeDonne">
-         <h5>Je fais le don de :</h5> 
+         <h5 class="MonDon">Je fais le don de :</h5>
          
               <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" >
-              <label class="btn btn-outline-danger" for="option1">5 euros</label>
+              <label class="btn btn-outline-danger" for="option1">10 euros</label>
 
               <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-              <label class="btn btn-outline-danger" for="option2">10 euros</label>
+              <label class="btn btn-outline-danger" for="option2">15 euros</label>
 
               <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" >
               <label class="btn btn-outline-danger" for="option3">20 euros</label>
 
         </div>
+        
+<!-- montant libre -->
 
-        <div class="montantLibre"></div>
+        <div class="montantLibre">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Montant libre" aria-label="Montant libre" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">€</span>
+          </div>
+        </div>
     </div>
+<!-- montant libre -->
+
+<!-- Don -->
+    
+
+<!-- Mes coordonnées -->
     <div class="mesCoordonnees">
-        <h4>Mes coordonnées</h4>
-        <p>Je me connecte et valide mon paiement <br>en un clic</br> </p>
-        <input class="btn btn-primary" type="submit" value="Paypal">
+        <h4>
+          <b>Mes coordonnées</b>
+        </h4> 
+          <div class="fiche">
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping"><i class="fa-regular fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email*" aria-label="Email" aria-describedby="addon-wrapping">
+            </div>
+
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Civilité*</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected></option>
+                  <option value="1">Mme. </option>
+                  <option value="2">Mr. </option>
+                  
+                </select>
+              </div>
+
+  <!-- fiche contacte -->
+          
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Prénom*" aria-label="Prénom" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Nom*" aria-label="Nom" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Adresse*" aria-label="Adresse" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Complément d'adresse" aria-label="Complément d'adresse" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Code postal*" aria-label="Code postal" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Ville*" aria-label="Ville" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Téléphone" aria-label="TEL" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Date de naissance" aria-label="Date de naissance" aria-describedby="addon-wrapping">
+              </div>
+          </div>
     </div>
+<!-- fiche contacte -->
+
+<!-- Mes coordonnées -->
+
+<!-- mon reglement -->    
     <div class="monReglement">
-        <h4>Mon règlement</h4>
+        <h4>
+          <b>Mon règlement</b>
+        </h4> 
+          <div class="paiement">
+            <p>Plateforme de paiement 100% sécurisée</p>
+              <i class="fa-sharp fa-solid fa-pen-to-square fa-2x"></i>
+                <p>IBAN/BIC</p>
+                  <div class="input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="Votre numéro IBAN" aria-label="IBAN" aria-describedby="addon-wrapping">
+                  </div>
+                  <div class="input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="Votre code BIC" aria-label="BIC" aria-describedby="addon-wrapping">
+                  </div>
+                  <button type="button" class="btn btn-danger" id="Valide">JE VALIDE</button>
+
+          </div> 
     </div>
+<!-- mon reglement --> 
   </div>
-     
+</div>     
 
 </main>    
 

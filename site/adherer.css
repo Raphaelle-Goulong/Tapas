@@ -143,13 +143,12 @@ nav.fill ul li a:hover:after {
 
 
 main{
-
     height: 900px;
     width: 100%;
     margin-top: 50px;
-     
 }
 
+/* image */
 .image{
     height: 750px;
     width:  500px;
@@ -157,47 +156,74 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* border-radius: 15px; */
-    
 }
+/* image */
+
+/* formulaire */
 .formulaire{
     height: 750px;
     background-color: #01528cd2;
     width: 500px;
-    
     background-size:50%;
     background-repeat: no-repeat;
-    /* border-radius: 15px; */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.269); 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.269);
+    
+    
 }
 .cadre{
     display: flex;
     justify-content:center;
-    margin-top: 20px;
+    margin-top: 50px;
     font-family: 'Raleway', sans-serif;
     color: white;
     
+  
 }
 .info{
     display: flex;
     justify-content:center;
     margin-top: 20px;
     padding: 20px;
+     
+    
 }
-/* FIN MAIN */
 
+.butt{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* formulaire */
+/* FIN MAIN */
+@media only screen and (max-width: 575px) 
+{
+  .fill{
+        text-align: center;     
+  }
+  
+  .image{
+    width: 0;
+  }
+
+   
+  
+}
 /* footer */
 footer{
     /* background-color: #001a2ee7; */
     background: linear-gradient(#01528cd2,#ec4c53);
     color: white;
     font-family: 'Raleway', sans-serif;
-  }
-  p:hover{
+}
+
+p:hover{
     color: #001a2e;
-  }
-  i:hover{
+}
+  
+i:hover{
     color: #ec4c53;
-  }
+}
   
   /* footer */

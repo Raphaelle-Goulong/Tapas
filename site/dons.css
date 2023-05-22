@@ -43,7 +43,7 @@ nav ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;   
@@ -92,7 +92,7 @@ nav.fill ul li a:after {
 }
   
 nav.fill ul li a:hover {
-    color: #410808;
+    color: #ffffff;
     z-index: 1;
 }
   
@@ -129,7 +129,6 @@ nav.fill ul li a:hover:after {
 /* FIN NAV */
 
 
-
 /* MAIN */
 
 
@@ -138,24 +137,59 @@ main{
     width: 100%;
      
 }
+
+
+/* dons */
 .dons{
     background-color:#ffffff5f ;
     height: 300px;
 }
- h5{
+h5{
     font-size: 5px;
-    color: black;  
- }
+    color: black;     
+}
+.MonDon{
+    
+    margin-bottom: 30px;
+}
+.jeDonne{
+    color: white;
+    margin-top: 20px;   
+}
+/* don */
+
+/* coordonnées */
 .mesCoordonnees{
     background-color: #ec4c5482;   
     height: 800px;
+    
 }
+.fiche{
+    margin-top: 35px;
+}
+/* coordonées */
 
+/* mon reglement */
 .monReglement{
     background-color: #001a2e89;
     height: 500px;   
 }
+.btn{
+    color: #ffffff;
+    
+}
+.paiement{
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+#Valide{
+    margin: 20px;
+}
 
+/* mon reglement */
+
+/* all */
 .dons ,.mesCoordonnees ,.monReglement{
     width: 400px;
     border-radius: 15px;
@@ -165,15 +199,82 @@ main{
     font-family: 'Raleway', sans-serif;
     padding: 20px;
 } 
+.input-group{
+    margin-top: 20px;
+}
+/* all */
 
-.jeDonne{
-    color: white;
+.EnsembleCard{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 575px) 
+{
+  .fill{
+        text-align: center;     
+  }
+  .dons{
+   width: 250px;
     
+  }
+  
+  .mesCoordonnees{
+    width: 250px;
+  }
+
+  .monReglement{
+    width: 250px;
+  }
+  
+  .EnsembleCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main{
+    width: auto;
+    height: auto;
+  }
+  
 }
 
-.btn{
-    color: #ffffff;
+@media only screen and (min-width: 575px) and (max-width: 1300px)
+{
+  .fill{
+        text-align: center;     
+  }
+  .dons{
+   width: 450px;
+    
+  }
+  
+  .mesCoordonnees{
+    width: 450px;
+  }
+
+  .monReglement{
+    width: 450px;
+  }
+  
+  .EnsembleCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main{
+    width: auto;
+    height: auto;
+  }
+  
 }
+
+
+
+
 
 /* FIN MAIN */
 
@@ -183,12 +284,14 @@ footer{
     background: linear-gradient(#01528cd2,#ec4c53);
     color: white;
     font-family: 'Raleway', sans-serif;
-  }
-  p:hover{
+}
+
+p:hover{
     color: #001a2e;
-  }
-  i:hover{
+}
+
+i:hover{
     color: #ec4c53;
-  }
+}
   
   /* footer */

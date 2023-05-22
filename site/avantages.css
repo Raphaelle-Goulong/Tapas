@@ -19,7 +19,7 @@ body{
     color: white;
     text-align: center;
 }
-
+j
 nav{
     width: 100%;
     margin: 0 auto;
@@ -133,16 +133,12 @@ nav.fill ul li a:hover:after {
 
 
 /* MAIN */
-
-
-.page{
-
-    height: 900px;
-    width: 100%;
-    margin-top: 100px;
-    
-    
+main{
+    height: 800px;
+    margin: 50px;
+    display: flex;
 }
+
 
 .card{
     width: 400px;
@@ -163,18 +159,194 @@ nav.fill ul li a:hover:after {
     color: white;
     
 }
- 
+
 .zoom {
    
     transition: transform .2s; /* Animation */
-    width: 50px;
-    height: 50px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+     width: 400px;
+    height: 340px; 
+   
+    margin: 50px;
 }
   
 .zoom:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1); 
 }
+
+.page{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction : row;
+    justify-content : space-around ;
+    align-items : center; 
+    padding: 20px;
+}
+   
+#loisir{
+    height: 350px;
+    width: 400px;
+    display: flex;
+}
+
+#voyage{
+    height: 350px;
+    width: 400px;
+    display: flex;
+
+}
+
+#bonneAff{
+    height: 350px;
+    width: 400px;
+    display: flex;
+    
+}
+
+/* media */
+@media only screen and (max-width: 575px) 
+{
+    main{
+        height: auto; 
+        width: auto;
+        margin-bottom: 150px;
+    }
+  
+    .fill{
+        text-align: center;     
+    }
+
+
+
+    .card{
+        margin: 55px; 
+            
+    }  
+
+    .zoom{
+        margin-top: 55px; 
+            
+    }
+    
+    .page{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction : column;
+        margin: 40px;
+        align-items : center;
+        
+    }
+     
+    #loisir{
+        height: 280px;
+        width: 300px;
+    }
+        
+    #voyage{  
+        height: 280px;
+        width: 300px;
+    }
+        
+    #bonneAff{
+        height: 280px;
+        width: 300px;
+    }
+    
+}
+    
+
+
+@media only screen and (min-width: 575px) and (max-width: 1100px)
+{
+    
+    main{
+        height: auto;
+        width: auto;
+        
+    }
+    .fill{
+        text-align: center;     
+    }
+  
+    #logo{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        align-items: center;
+    } 
+     
+    .page{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content : space-everly ;
+        flex-direction : column;
+        align-items : center;
+        
+    }
+
+    .zoom{
+            width: auto;
+            height: auto;
+
+    }
+
+
+    #loisir{
+        height: 300px;
+        width: 350px;
+    }
+
+    #voyage{    
+        height: 300px;
+        width: 350px;
+    }
+    
+    #bonneAff{
+        height: 300px;
+        width: 350px;
+    }   
+
+}
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1400px){
+
+    main{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    #loisir{
+        height: 200px;
+        width: 300px;
+     }   
+     
+    #voyage{
+     
+        height: 200px;
+        width: 300px;
+     }   
+
+    #bonneAff{
+       
+        height: 200px;
+        width: 300px;
+     }  
+     
+}
+
+/* media */
+
+
 /* FIN MAIN */
+
 
 /* footer */
 footer{
@@ -182,6 +354,7 @@ footer{
     background: linear-gradient(#01528cd2,#ec4c53);
     color: white;
     font-family: 'Raleway', sans-serif;
+    width: auto;
 }
 
 p:hover{

@@ -22,7 +22,6 @@ body{
 }
 .navbar-toggler-icon{
     background-color: #ec4c53;
-    
    
 }
 
@@ -144,49 +143,80 @@ nav.fill ul li a:hover:after {
 
 main{
 
-    height: 900px;
+    height: auto;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
      
 }
 
 .presentation{
     
-    height: 800px;
-    width: 1000px;
+    height: auto;
+    width: 1100px;
     background-color: #001a2e77;
     border-radius: 15px;
+    padding: 20px;
+    
     
 }
 
 h1{
     text-align: center;
     color: white;
-    font-size: 100px;
-    padding: 20px;
+    padding: 20px;   
+}
+
+.titre{
+    margin-top: 30px;
+    margin-bottom: 30px; 
+ }
+
+#pp{
+    height: auto;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.p-3{
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 575px) 
+{
+  .fill{
+        text-align: center;     
+  }
+
+
+}
+
+@media screen and (max-width: 1100px) {
+    
+    main{
+        height: auto;
+    }
     
 }
 
-.cadrePhoto{
-    height: 400px;
-    width: 300px;
-    background-color: #9a0a31bb;
-    margin: 50px;
-    border-radius: 15px;
+@media screen and (min-width: 768px) and (max-width: 1100px){
+    
+    main{
+        height: auto;
+    }
+    #pp{
+            height: auto;
+            width: 90%;
+            
+    } 
 }
 
-#pp{
-    height: 200px;
-    width: 200px;
-    border-radius: 15px;
-}
- 
-.texte{
-    height: 200px;
-    width: 200px;
-    border-radius: 15px; 
-    background-color: #555;
-}
+/* responsive */
+
 
 /* FIN MAIN */
 
@@ -196,12 +226,10 @@ footer{
     background: linear-gradient(#01528cd2,#ec4c53);
     color: white;
     font-family: 'Raleway', sans-serif;
-  }
-  p:hover{
-    color: #001a2e;
-  }
-  i:hover{
+}
+  
+i:hover{
     color: #ec4c53;
-  }
+}
   
   /* footer */
